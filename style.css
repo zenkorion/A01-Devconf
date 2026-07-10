@@ -1,7 +1,7 @@
 body {
     margin: 0 auto;
     font-family: "SN Pro", sans-serif;
-
+    font-family: "Outfit", sans-serif;
 }
 
 .nav-bar {
@@ -192,4 +192,101 @@ main {
 
 .card p, h2 {
     margin: 5px 20px;
+}
+
+.plan .headline {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 60px;
+}
+
+.plan h3 {
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 50px;
+    color: rgba(43, 51, 63, 0.685);
+}
+
+.plan {
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.plan-card {
+    border: 2px solid rgba(24, 48, 71, 0.144);
+    padding: 20px 25px;
+    border-radius: 14px;
+}
+
+.plan-card h4, h1 {
+    margin: 5px 0px;
+}
+
+.plan-card ul {
+    margin-left: -20px;
+    font-size: 18px;
+    
+    
+}
+
+.plan-card li {
+    margin-bottom: 12px;
+}
+
+.plan-card li::marker {
+    color: rgb(0, 102, 255);
+}
+
+.plan-card .pro-btn {
+    height: 40px;
+    width: 270px;
+    margin: 15px auto 5px;
+    display: block;
+    background-color: rgb(0, 68, 255);
+    border: none;
+    border-radius: 6px;
+    color: aliceblue;
+    font-size: 17px;
+}
+
+.plan-card button:hover {
+    height: 40px;
+    width: 270px;
+    margin: 15px auto 5px;
+    display: block;
+    background-color: rgb(0, 68, 255);
+    border: none;
+    border-radius: 100px;
+    color: aliceblue;
+    font-size: 17px;
+}
+
+.plan-card .simple-btn {
+    height: 40px;
+    width: 270px;
+    margin: 15px auto 5px;
+    display: block;
+    background-color: rgb(235, 241, 255);
+    border: 2px solid rgb(98, 140, 255);
+    border-radius: 6px;
+    color: rgb(0, 102, 255);
+    font-size: 17px;
+}
+
+.plan-card .simple-btn:hover {
+    height: 40px;
+    width: 270px;
+    margin: 15px auto 5px;
+    display: block;
+    background-color: rgb(222, 231, 255);
+    border: 2px solid rgb(98, 140, 255);
+    border-radius: 100px;
+    color: rgb(0, 102, 255);
+    font-size: 17px;
 }
