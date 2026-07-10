@@ -559,3 +559,7 @@ textarea.form-control {
     color: #ffffff;
     border-color: #ffffff;
 }
+
+.cr-msg {
+    color: #0f5bff;
+}
