@@ -159,7 +159,7 @@ main {
     padding: 0 auto;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgba(199, 202, 207, 0.295);
+    border: 2px solid rgba(199, 202, 207, 0);
 }
 
 .div-card h1 {
@@ -173,7 +173,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
-    
+
     gap: 20px;
 }
 
@@ -192,7 +192,8 @@ main {
     border-top-right-radius: 10px;
 }
 
-.card p, h2 {
+.card p,
+h2 {
     margin: 5px 20px;
 }
 
@@ -226,15 +227,16 @@ main {
     border-radius: 14px;
 }
 
-.plan-card h4, h1 {
+.plan-card h4,
+h1 {
     margin: 5px 0px;
 }
 
 .plan-card ul {
     margin-left: -20px;
     font-size: 18px;
-    
-    
+
+
 }
 
 .plan-card li {
@@ -297,147 +299,263 @@ main {
 /* --- This Section Build With Google Gemini (AI) --- */
 
 .faq-section {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 0;
-        }
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
 
-        .section-header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-        .section-header h2 {
-            font-size: 2.2rem;
-            font-weight: 800;
-            margin: 0;
-        }
+.section-header h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 0;
+}
 
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1.4fr 1fr;
-            gap: 30px;
-        }
+.grid-container {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 30px;
+}
 
-        .faq-wrapper {
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-        }
+.faq-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
 
-        .faq-card {
-            background-color: #f2f6ff;
-            border: 2px solid #e5f0ff;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: all 0.2s ease;
-        }
+.faq-card {
+    background-color: #f2f6ff;
+    border: 2px solid #e5f0ff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
 
-        .faq-card summary {
-            padding: 20px;
-            font-size: 1.05rem;
-            font-weight: 600;
-            cursor: pointer;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+.faq-card summary {
+    padding: 20px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        .faq-card summary::-webkit-details-marker {
-            display: none;
-        }
+.faq-card summary::-webkit-details-marker {
+    display: none;
+}
 
-        .faq-card summary::after {
-            content: '+';
-            font-size: 1.3rem;
-            color: #94a3b8;
-            transition: transform 0.2s ease;
-        }
+.faq-card summary::after {
+    content: '+';
+    font-size: 1.3rem;
+    color: #94a3b8;
+    transition: transform 0.2s ease;
+}
 
-        .faq-card[open] {
-            border-color: #105cff;
-        }
+.faq-card[open] {
+    border-color: #105cff;
+}
 
-        .faq-card[open] summary {
-            border-bottom: 1px solid #1e293b;
-        }
+.faq-card[open] summary {
+    border-bottom: 1px solid #1e293b;
+}
 
-        .faq-card[open] summary::after {
-            content: '−';
-            color: #0f5bff;
-        }
+.faq-card[open] summary::after {
+    content: '−';
+    color: #0f5bff;
+}
 
-        .faq-answer {
-            padding: 20px;
-            color: #080c13;
-            line-height: 1.6;
-            font-size: 0.95rem;
-        }
+.faq-answer {
+    padding: 20px;
+    color: #080c13;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
 
-        .form-container {
-            background-color: #f5f8ff;
-            border: 2px solid #e9f3ff;
-            border-radius: 12px;
-            padding: 30px;
-        }
+.form-container {
+    background-color: #f5f8ff;
+    border: 2px solid #e9f3ff;
+    border-radius: 12px;
+    padding: 30px;
+}
 
-        .form-container h3 {
-            margin: 0 0 8px 0;
-            font-size: 1.3rem;
-        }
+.form-container h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.3rem;
+}
 
-        .form-container p {
-            color: #131a24;
-            font-size: 0.9rem;
-            margin: 0 0 20px 0;
-        }
+.form-container p {
+    color: #131a24;
+    font-size: 0.9rem;
+    margin: 0 0 20px 0;
+}
 
-        .form-group {
-            margin-bottom: 10px;
-        }
+.form-group {
+    margin-bottom: 10px;
+}
 
-        .form-group label {
-            display: block;
-            font-size: 0.85rem;
-            margin-bottom: 6px;
-            color: #cbd5e1;
-        }
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+    color: #cbd5e1;
+}
 
-        .form-control {
-            width: 100%;
-            background-color: #e5edff;
-            border: 1px solid #cbd1da;
-            border-radius: 6px;
-            padding: 12px;
-            color: #08141a;
-            font-size: 0.95rem;
-            box-sizing: border-box;
-        }
+.form-control {
+    width: 100%;
+    background-color: #e5edff;
+    border: 1px solid #cbd1da;
+    border-radius: 6px;
+    padding: 12px;
+    color: #08141a;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+}
 
-        .form-control:focus {
-            outline: none;
-            border-color: #2563eb;
-        }
+.form-control:focus {
+    outline: none;
+    border-color: #2563eb;
+}
 
-        textarea.form-control {
-            resize: none;
-            height: 100px;
-        }
+textarea.form-control {
+    resize: none;
+    height: 100px;
+}
 
-        .submit-btn {
-            width: 100%;
-            background-color: #2563eb;
-            color: #ffffff;
-            border: none;
-            border-radius: 6px;
-            padding: 12px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
+.submit-btn {
+    width: 100%;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
 
-        .submit-btn:hover {
-            background-color: #1d4ed8;
-        }
+.submit-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.footer {
+    background-color: #02060a;
+    margin-top: 20px;
+}
+
+.ft-cont {
+    display: flex;
+    border-bottom: 1px solid;
+    margin: 0 250px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #cbd1da;
+}
+
+.ft-box1 {
+    flex: 5;
+    padding: 10px auto;
+    height: 150px;
+}
+
+.ft-box2 {
+    flex: 2;
+    height: 150px;
+}
+
+.ft-box3 {
+    flex: 2;
+    height: 150px;
+}
+
+.ft-box4 {
+    flex: 2;
+    height: 150px;
+}
+
+
+.ft-box5 {
+    flex: 5;
+    height: 150px;
+}
+
+.ft-box5 input, 
+.ft-box5 button {
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    border-radius: 6px;
+
+}
+
+.ft-box5 input {
+    background-color: #0f172ade;
+    border: none;
+    color: #ffffff;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.ft-box5 button {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.ft-box5 button:hover {
+    background-color: #1d4ed8;
+}
+
+.social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.social-section .social-text {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #94a3b8;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+
+.social-section .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-section .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #131c2e;
+    border: 1px solid #1e293b;
+    border-radius: 50%;
+    color: #94a3b8;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.social-section .icon:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #ffffff;
+}
